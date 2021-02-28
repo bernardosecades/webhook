@@ -1,6 +1,7 @@
 # Webhook Signature
 
 [![Test](https://github.com/bernardosecades/webhook/workflows/Test/badge.svg)](https://github.com/bernardosecades/webhook/actions)
+[![GoDoc](https://godoc.org/github.com/bernardosecades/webhook?status.png)](https://godoc.org/github.com/bernardosecades/webhook)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bernardosecades/webhook)](https://goreportcard.com/report/github.com/bernardosecades/webhook)
 
 Webhooks are reverse APIs, so they need non-standard infrastructure. The starting point for building webhooks is that your app is generating data that your customers want. 

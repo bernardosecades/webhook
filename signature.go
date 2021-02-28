@@ -31,17 +31,17 @@ type signedHeader struct {
 	hashFunc  func() hash.Hash
 }
 
-// Validate payload to prevent reply attacks
+// ValidatePayloadWithTolerance validate payload to prevent reply attacks
 func ValidatePayloadWithTolerance(payload []byte, sigHeader string, secret string, tolerance time.Duration) error {
 	return validatePayload(payload, sigHeader, secret, tolerance, true)
 }
 
-// Validate payload without considerate replay attaks
+// ValidatePayloadIgnoringTolerance validate payload without considerate replay attaks
 func ValidatePayloadIgnoringTolerance(payload []byte, sigHeader string, secret string) error {
 	return validatePayload(payload, sigHeader, secret, 0*time.Second, false)
 }
 
-// Create value signature with format: "timestamp,hashFunc=signature"
+// CreateHeaderValueSignature create value signature with format: "timestamp,hashFunc=signature"
 func CreateHeaderValueSignature(hf string, t time.Time, payload []byte, secret string) (string, error) {
 	hashFunction, err := hashFunc(hf)
 	if err != nil {

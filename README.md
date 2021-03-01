@@ -1,5 +1,5 @@
 # Webhook Signature
-
+[![codecov](https://codecov.io/gh/bernardosecades/webhook/branch/master/graph/badge.svg)](https://codecov.io/gh/bernardosecades/webhook)
 [![Test](https://github.com/bernardosecades/webhook/workflows/Test/badge.svg)](https://github.com/bernardosecades/webhook/actions)
 [![GoDoc](https://godoc.org/github.com/bernardosecades/webhook?status.png)](https://godoc.org/github.com/bernardosecades/webhook)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bernardosecades/webhook)](https://goreportcard.com/report/github.com/bernardosecades/webhook)
